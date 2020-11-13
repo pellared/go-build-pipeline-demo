@@ -1,5 +1,7 @@
 # Go Build Pipeline Demo
 
+[Presentation](https://docs.google.com/presentation/d/1fJ26B1D1VkxC-1DppegPCe8YOaA3Ayrbke2yAx-Kzcs/edit?usp=sharing).
+
 This repository demonstrates a very basic build pipeline for a Go project created in:
 - **[Make](./make)**
 - **[Mage](./mage)**
