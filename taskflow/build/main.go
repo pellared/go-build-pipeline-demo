@@ -5,21 +5,19 @@ import (
 	"path/filepath"
 
 	"github.com/pellared/taskflow"
+
+	"github.com/pellared/go-build-pipeline-demo/taskflow/common"
 )
 
 func main() {
 	tasks := &taskflow.Taskflow{}
 
+	c := common.Register(tasks)
+
 	clean := tasks.MustRegister(taskflow.Task{
 		Name:        "clean",
 		Description: "remove files created during build",
 		Command:     taskClean,
-	})
-
-	fmt := tasks.MustRegister(taskflow.Task{
-		Name:        "fmt",
-		Description: "go fmt",
-		Command:     taskFmt,
 	})
 
 	test := tasks.MustRegister(taskflow.Task{
@@ -33,7 +31,7 @@ func main() {
 		Description: "build pipeline",
 		Dependencies: taskflow.Deps{
 			clean,
-			fmt,
+			c.Fmt,
 			test,
 		},
 	})
@@ -53,12 +51,6 @@ func taskClean(tf *taskflow.TF) {
 			continue
 		}
 		tf.Logf("removed %s", file)
-	}
-}
-
-func taskFmt(tf *taskflow.TF) {
-	if err := tf.Exec("", nil, "go", "fmt", "./..."); err != nil {
-		tf.Errorf("go fmt: %v", err)
 	}
 }
 

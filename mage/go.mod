@@ -1,4 +1,4 @@
-module foo
+module github.com/pellared/go-build-pipeline-demo/mage
 
 go 1.15
 

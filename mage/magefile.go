@@ -9,11 +9,14 @@ import (
 
 	"github.com/magefile/mage/mg"
 	"github.com/magefile/mage/sh"
+
+	// mage:import
+	"github.com/pellared/go-build-pipeline-demo/mage/common"
 )
 
 // All runs build pipeline.
 func All() {
-	mg.SerialDeps(Clean, Fmt, Test)
+	mg.SerialDeps(Clean, common.Fmt, Test)
 }
 
 // Clean remove files created during build.
@@ -34,11 +37,6 @@ func Clean() error {
 		}
 	}
 	return err
-}
-
-// Fmt runs go fmt.
-func Fmt() error {
-	return sh.Run("go", "fmt", "./...")
 }
 
 // Test runs go test with race detector and code covarage.
