@@ -17,7 +17,7 @@ Removes files created during build. It logs which files are removed and which fi
 
 ### `fmt`
 
-Simply runs `go fmt ./...`.
+Simply runs `go fmt ./...`. This target is imported as it can be reused by multiple projects.
 
 ### `test`
 
