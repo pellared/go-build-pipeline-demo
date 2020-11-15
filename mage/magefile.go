@@ -4,6 +4,7 @@ package main
 
 import (
 	"fmt"
+	"log"
 	"os"
 	"path/filepath"
 
@@ -32,9 +33,7 @@ func Clean() error {
 			fmt.Println("failed to remove", file, err)
 			continue
 		}
-		if mg.Verbose() {
-			fmt.Println("removed", file)
-		}
+		log.Println("removed", file)
 	}
 	return err
 }
