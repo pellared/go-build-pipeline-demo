@@ -9,11 +9,11 @@ This repository demonstrates a very basic build pipeline for a Go project create
 
 ## Build Pipeline
 
-The build pipeline, called `all`, consists of following steps:
+The build pipeline, called `all`, consists of the following steps:
 
 ### `clean`
 
-Removes files created during build. It logs which files are removed and which files it failed to remove.
+Removes files created during the build. It logs which files are removed and which files failed to be removed.
 
 ### `fmt`
 
@@ -21,4 +21,4 @@ Simply runs `go fmt ./...`. This target is imported as it can be reused by multi
 
 ### `test`
 
-Runs tests and generates coverage even if some test fails.
+Runs tests and generates code coverage even if any test fails.
