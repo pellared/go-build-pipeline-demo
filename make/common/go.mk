@@ -1,12 +1,6 @@
-### universal Go targets
-
-.PHONY: fmt
-fmt: ## go fmt
-	$(call print-target)
-	go fmt ./...
-
-
 ### common stuff
+
+SHELL := /bin/bash
 
 .PHONY: help
 help:
@@ -15,3 +9,10 @@ help:
 define print-target
     @printf "Executing target: \033[36m$@\033[0m\n"
 endef
+
+### universal Go targets
+
+.PHONY: fmt
+fmt: ## go fmt
+	$(call print-target)
+	go fmt ./...
