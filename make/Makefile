@@ -1,7 +1,5 @@
 include common/go.mk
 
-.DEFAULT_GOAL := help
-
 .PHONY: all
 all: ## build pipeline
 all: clean fmt test
