@@ -1,5 +1,7 @@
 # Go Build Pipeline Demo
 
+[![Demo](https://img.youtube.com/vi/AtiUf0uJ4YE/hqdefault.jpg)](https://www.youtube.com/watch?v=AtiUf0uJ4YE)
+
 [Presentation](https://docs.google.com/presentation/d/1fJ26B1D1VkxC-1DppegPCe8YOaA3Ayrbke2yAx-Kzcs/edit?usp=sharing).
 
 This repository demonstrates a very basic build pipeline for a Go project created in:
