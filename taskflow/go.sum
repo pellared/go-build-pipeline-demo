@@ -4,6 +4,8 @@ github.com/pellared/taskflow v0.0.0-20201031223433-a9df4f1e7e83 h1:KgVK+nFfiQpRO
 github.com/pellared/taskflow v0.0.0-20201031223433-a9df4f1e7e83/go.mod h1:wyR16++w9G3fFjafTeoaysKO0+RfHmZ88T35eN5fM9Y=
 github.com/pellared/taskflow v0.0.0-20201211212648-d5eb3972a527 h1:NyDr897pDZ9Ip11z2e5Bgi2T3IjcbDDzLWrVZvoVuNQ=
 github.com/pellared/taskflow v0.0.0-20201211212648-d5eb3972a527/go.mod h1:wyR16++w9G3fFjafTeoaysKO0+RfHmZ88T35eN5fM9Y=
+github.com/pellared/taskflow v0.1.0 h1:KA+9zE/X4+2wimLTYQ9uIcgcuK/7wYx7AV5E+KhcBXE=
+github.com/pellared/taskflow v0.1.0/go.mod h1:wyR16++w9G3fFjafTeoaysKO0+RfHmZ88T35eN5fM9Y=
 github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
 github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=
